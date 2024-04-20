@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dk-violet: hsl(270, 27%, 52%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsla(244, 59%, 63%, 0.521);
+    --vb-violet: hsl(108, 50%, 59%);
+    --vb-violet2: hsl(291, 47%, 68%);
+    --vb-yellow: hsl(52, 100%, 62%);
+    --vb-white: hsl(0, 0%, 99%);
+    --vb-cyan: hsl(176, 100%, 44%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+    --dk-text: hsl(198, 20%, 13%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+}
+
+.container h2 {
+    color: var(--dk-violet);
+    text-align: center;
+    line-height: 1.2;
+    opacity: 0.75;
+    text-transform: uppercase;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.input-box input[type="date"] {
+    padding: 10px;
+    border: 1px solid var(--dk-violet);
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-box button {
+    padding: 10px 20px;
+    background-color: var(--vb-yellow);
+    color: var(--dk-violet);
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.output-box {
+    margin-top: 20px;
+}
+
+#result {
+    font-size: 18px;
+    color: var(--dk-text);
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--dk-violet);
+    border-radius: 5px;
+}
+
+#calculate:hover {
+    background-color: var(--vb-yellow);
+    color: var(--dk-violet);
+}
